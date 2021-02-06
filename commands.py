@@ -9,4 +9,3 @@ class MyClient(discord.Client):
         if message.content.startswith("!help"):
             await message.channel.send("Python Discord Bot von Niklas Dewes")
             await message.channel.send("Amy ist toll")
-            await message.channel.send("Fabrizio mag Pizza")
