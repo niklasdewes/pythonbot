@@ -5,8 +5,8 @@ import commands as cmd
 
 def main():
     start
-    roulette
     cmd
+    roulette
 
 
 if __name__ == "__main__":
