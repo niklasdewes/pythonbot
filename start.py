@@ -1,13 +1,12 @@
-import discord
-import key as start
+import key
+import commands
 import roulette
-import commands as cmd
 
 def main():
-    start
-    cmd
+    print("Test")
+    key
     roulette
-
+    commands
 
 if __name__ == "__main__":
     main()
