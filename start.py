@@ -1,12 +1,11 @@
-import key
+import discord
 import commands
 import roulette
 
-def main():
-    print("Test")
-    key
-    roulette
-    commands
+class MyClient(discord.Client):
+    #Login
+    async def on_ready(self):
+        print("I've been login.")
 
-if __name__ == "__main__":
-    main()
+client = MyClient()
+client.run(open("key.txt)"))

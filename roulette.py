@@ -3,7 +3,7 @@ import key
 import random
 
 class MyClient(discord.Client):
-    async def on_message(self, message):
+    async def on_messages(self, message):
         if message.author == client.user:
             return
 

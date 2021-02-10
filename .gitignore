@@ -8,6 +8,7 @@
 pyvenv.cfg
 .venv
 pip-selfcheck.json
-key.py
+key.txt
 __pycache__
 venv
+settings.json
