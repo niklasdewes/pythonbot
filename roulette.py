@@ -1,8 +1,7 @@
 import discord
-import key
 import random
 
-class MyClient(discord.Client):
+class ROU(discord.Client):
     async def on_messages(self, message):
         if message.author == client.user:
             return
@@ -34,4 +33,4 @@ class MyClient(discord.Client):
             else:
                 return await message.channel.send("Leider verloren...")
 
-client = MyClient()
+client = ROU()

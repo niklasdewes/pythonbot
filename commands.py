@@ -1,7 +1,6 @@
 import discord
-import key
 
-class MyClient(discord.Client):
+class CMD(discord.Client):
 #If a message delivered
     async def on_message(self, message):
         if message.author == client.user:
@@ -11,4 +10,4 @@ class MyClient(discord.Client):
                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n
                                             !roulette <BID> - Spiele Roulette. Als BID kommt 'red', 'black' & 'number(0-30)' in Frage.""")
 
-client = MyClient()
+client = CMD()
