@@ -1,5 +1,5 @@
 import discord
-from commands import MyClient, cmd
+from commands import cmd
 from roulette import rou
 
 class MyClient(discord.Client):
@@ -7,10 +7,11 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print("I've been login.")
 
-def main():
-    MyClient()
     cmd()
     rou()
+
+def main():
+    MyClient()
 
 client = MyClient()
 k = open('key.txt')

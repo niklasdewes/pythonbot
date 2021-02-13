@@ -6,7 +6,7 @@ class cmd(discord.Client):
         if message.author == client.user:
             return  
         if message.content == "!help":
-            return await message.channel.send("""Python Discord Bot von Niklas Dewes
+            await message.channel.send("""Python Discord Bot von Niklas Dewes
 ---------------------
 !roulette <BID> - Spiele Roulette. Als BID kommt 'red', 'black' & 'number(0-30)' in Frage.""")
 
