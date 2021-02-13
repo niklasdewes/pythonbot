@@ -1,12 +1,12 @@
 import discord
 import random
 
-class ROU(discord.Client):
+class rou(discord.Client):
     async def on_messages(self, message):
         if message.author == client.user:
             return
 
-        if message.content.startswith("!roulette"):
+        if message.content == "!roulette":
             bid = message.content.split(' ')[1]
             bid_param = -3
             if bid.lower() == "black":
@@ -19,7 +19,8 @@ class ROU(discord.Client):
                 except:
                     bid_param = -3
             if bid_param == -3:
-                return await message.channel.send("Ungültige Eingabe")
+                await message.channel.send('Ungültige Eingabe')
+                return
             result = random.randint(0,36)
             print(result)
             if bid_param == -1:
@@ -29,11 +30,11 @@ class ROU(discord.Client):
             else:
                 won = result == bid_param
             if won:
-                return await message.channel.send("~~~ Du hast gewonnen!!! ~~~")
+                await message.channel.send('$$$ Du hast gewonnen!!! $$$')
             else:
-                return await message.channel.send("Leider verloren...")
+                await message.channel.send('Leider verloren...')
 
-client = ROU()
+client = rou()
 k = open('key.txt')
 mykey = k.readline()
 client.run(mykey)
