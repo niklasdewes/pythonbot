@@ -34,3 +34,6 @@ class ROU(discord.Client):
                 return await message.channel.send("Leider verloren...")
 
 client = ROU()
+k = open('key.txt')
+mykey = k.readline()
+client.run(mykey)

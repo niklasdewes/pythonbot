@@ -1,17 +1,10 @@
-import discord
-import commands
-import roulette
-
-class MyClient(discord.Client):
-    #Login
-    async def on_ready(self):
-        print("I've been login.")
+from commands import MyClient, CMD
+from roulette import ROU
 
 def main():
     MyClient()
-    key = open("key.txt")
-    read_file = key.read()
-    exec(read_file)
+    CMD()
+    ROU()
 
 client = MyClient()
 k = open('key.txt')
